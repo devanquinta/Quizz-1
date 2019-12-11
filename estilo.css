@@ -1,0 +1,381 @@
+
+@media only screen and (min-width: 1367px) and (max-width: 1920px){
+  #textIndex{
+    width: 1000px;
+    height: 400px;
+  }
+ #pag0, #pag1, #pag2, #pag3, #pag4, #pag5{
+   width: auto;
+   height: 60%;
+   margin-top: 120px;
+   margin-left: 7%;
+   position: absolute;
+  }
+  .simpleListAnswer, .quizzAnswer{
+  	font-size: 25px;
+ }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 1366px){
+ #pag0, #pag1, #pag2, #pag3, #pag4, #pag5{
+   width: auto;
+   height: auto;
+   margin-top: 15px;
+   margin-left: 2%;
+   position: absolute;
+  }
+}
+@media only screen and (min-width: 1080px) and (max-width: 1199px) {
+   .textoInic{
+        font-size: 45px;
+    }
+    .textMot{
+       font-size: 45px;
+       color: blue;
+    }
+    .btn3{
+      margin-left: 50%;
+    }
+    #pagA{
+			width: auto;
+			height: 100px;
+			/*background-color: #fdfd96;*/
+			margin-left: -10%;
+			margin-bottom: 200px;
+			border: 1px #fefefe solid;
+    }
+    body {
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 50px;
+    }
+}
+@media only screen and (min-width: 990px) and (max-width: 999px) {
+   .textoInic{
+        font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: greenyellow;
+    }
+    .btn3{
+      margin-left: 50%;
+    }
+    #pagA{
+    width: auto;
+    height: 100px;
+    /*background-color: #fdfd96;*/
+    margin-left: -20%;
+    margin-bottom: 200px;
+    border: 1px #fefefe solid;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+}
+ @media only screen and (min-width: 870px) and (max-width: 990px){
+    .textoInic{
+        font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: goldenrod;
+    }
+    .btn3{
+      margin-left: 50%;
+    }
+     #pagA{
+    width: auto;
+    height: 100px;
+    /*background-color: #fdfd96;*/
+    margin-left: -25%;
+    margin-bottom: 200px;
+    border: 1px #fefefe solid;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+  }
+  @media only screen and (min-width: 780px) and (max-width: 869px) {
+    .textoInic{
+        font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: grey;
+    }
+    .btn3{
+      margin-left: 57%;
+    }
+    #pagA{
+      width: auto;
+      height: 100px;
+      /*background-color: #fdfd96;*/
+      margin-left: -40%;
+      margin-bottom: 200px;
+      border: 1px #fefefe solid;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+  }
+@media only screen and (min-width: 770px) and (max-width: 779px) {
+   .textoInic{
+       font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: pink;
+    }
+    .btn3{
+      margin-left: 58%;
+    }
+     body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+    #pagA{
+      width: auto;
+      height: 100px;
+      /*background-color: #fdfd96;*/
+      margin-left: -50%;
+      margin-bottom: 200px;
+      border: 1px #fefefe solid;
+    }
+}
+@media only screen and (min-width: 760px) and (max-width: 769px) {
+   .textoInic{
+        font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: rgb(255, 251, 192);
+    }
+    .btn3{
+      margin-left: 58%;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+    #pagA{
+      width: auto;
+      height: 100px;
+      /*background-color: #fdfd96;*/
+      margin-left: -50%;
+      margin-bottom: 200px;
+      border: 1px #fefefe solid;
+    }
+}
+@media only screen and (min-width: 690px) and (max-width: 759px) {
+   .textoInic{
+        font-size:40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: rgb(243, 11, 50);
+    }
+    .btn3{
+      margin-left: 60%;
+    }
+     body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+    #pagA{
+      width: auto;
+      height: 100px;
+      /*background-color: #fdfd96;*/
+      margin-left: -50%;
+      margin-bottom: 200px;
+      border: 1px #fefefe solid;
+    }
+}
+@media only screen and (min-width: 680px) and (max-width: 749px) {
+   .textoInic{
+        font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: rgb(37, 138, 182);
+    }
+    .btn3{
+      margin-left: 60%;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+    #pagA{
+      width: auto;
+      height: 100px;
+      /*background-color: #fdfd96;*/
+      margin-left: -50%;
+      margin-bottom: 200px;
+      border: 1px #fefefe solid;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 679px) {
+   .textoInic{
+        font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: rgb(182, 177, 37);
+    }
+    .btn3{
+      margin-left: 60%;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+    #pagA{
+      width: auto;
+      height: 100px;
+      /*background-color: #fdfd96;*/
+      margin-left: -70%;
+      margin-bottom: 200px;
+      border: 1px #fefefe solid;
+    }
+}
+@media only screen and (min-width: 580px) and (max-width: 599px) {
+   .textoInic{
+        font-size: 40px;
+    }
+    .textMot{
+       font-size: 40px;
+       color: rgb(182, 37, 146);
+    }
+    .btn3{
+      margin-left: 60%;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+    
+    #pagA{
+      width: auto;
+      height: 100px;
+      /*background-color: #fdfd96;*/
+      margin-left: -85%;
+      margin-bottom: 200px;
+      border: 1px #fefefe solid;
+    }
+}
+@media only screen and (min-width: 520px) and (max-width: 579px) {
+   .textoInic{
+        font-size: 30px;
+    }
+    .textMot{
+       font-size: 30px;
+       color: rgb(73, 110, 196);
+    }
+    .btn3{
+      margin-left: 130px;;
+      margin-top: 450px;
+      position: absolute;
+      width: 88px;
+      height: 30px;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      /*background: #fdfd96;*/
+      background: url(img/eletro.1.png);
+      background-repeat: no-repeat;
+      background-size: 150px;
+    }
+    #textIndex{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 50px;
+  }
+   #pagA{
+    width: auto;
+    height: 100px;
+    /*background-color: #fdfd96;*/
+    margin-left: -10%;
+    margin-bottom: 200px;
+    border: 1px #fefefe solid;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 519px) {
+   .textoInic{
+        font-size: 30px;
+    }
+    .textMot{
+       font-size: 30px;
+       color: rgb(1, 7, 19);
+    }
+    .btn3{
+      margin-left: 130px;
+      margin-top: 450px;
+      position: absolute;
+      width: 88px;
+      height: 30px;
+    }
+    #textIndex{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 50px;
+  }
+   #pagA{
+    width: auto;
+    height: 100px;
+    /*background-color: #fdfd96;*/
+    margin-left: -5%;
+    margin-bottom: 200px;
+    border: 1px #fefefe solid;
+  }
+	.img{
+		position: absolute;
+		float:left;
+		width: 5;
+		height: 1px;
+ }
+}

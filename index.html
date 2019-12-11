@@ -1,0 +1,352 @@
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="estilo.css" type="text/css" media="all">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">-->
+</head>
+<body>
+  <span class="img"><img src="img/logotipo.png"/></span>
+	<div class="container">
+		<div class="inner">
+			<!------------------------------------------------->
+			<div id="pagA">
+				<div id="textIndex">
+					<h1 class="textoInic">Aprendendo sobre Riscos<br>Corporativos</h1>
+          <br>
+          <h1 class="textMot">Faça o nosso Quizz!</h1>
+        </div>
+			<!--<img src="img/quiz2.png" onClick="document.getElementById('pag0').style.display = 'block';" onmouseup="document.getElementById('pagA').style.display = 'none'" class="btn2"/>-->
+      <button class="btn3" id="Id"  onClick="document.getElementById('pag0').style.display = 'block';"        onmouseup="document.getElementById('pagA').style.display = 'none'">Start Quizz</button>
+      </div>
+			<div id="pag0">
+				<!--Paginas dos slides - pag1, pag2, pag3 etc-->
+				<h2 class="qst">O que é risco de processo ?</h2>
+				<ul class="simpleList">
+					  <li class="simpleListAnswer  correct">
+						<span class="fa fa-square-o"></span>
+              <span class="simpleListText">É a probabilidade de um evento acontecer, seja ele uma ameaça, quando negativo, ou oportunidade, quando positivo.</span>
+            </li>
+            <li class="simpleListAnswer">
+              <!-- lib bootstrap -->
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Ameaça que ocorra algum acidente.</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Impacto causado por evento positivo ou negativo.</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">probabilidade da ocorrência de um evento que cause impacto</span>
+            </li>
+          </ul>
+          <!--end simpleList-->
+          <div class="answerReveal">
+            <div class="quizzAnswerC">
+              <div class="answerHeader">
+                <h3 class="correctMessage"></i>Parabéns</h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="bravo">É a probabilidade de um evento acontecer, seja ele uma ameaça, quando negativo, ou oportunidade, quando positivo.</p>
+              </div>
+              <!--end asnwerText-->
+              <input type="button" value="Next" onClick="document.getElementById('pag1').style.display = 'block'; Cont();" onmouseup="document.getElementById('pag0').style.display = 'none';Flag();" class="btn"></input>
+            </div>
+            <!--end quizzAnswerC-->
+            <div class="quizzAnswerF">
+              <div class="answerHeader">
+                <h3 class="wrongMessage"><i class="fa fa-times-circle"></i>Desculpe</h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="sorry"><p>Sua resposta está correta em muitos níveis! Bem feito!<br>
+                  O Brasil foi campeão em 2002 em cima da AlemanhaSua resposta está correta em muitos níveis! Bem feito!</p>
+                <input type="button" value="Next" onClick="document.getElementById('pag1').style.display = 'block';  Cont();" onmouseup="document.getElementById('pag0').style.display = 'none';Flag();" class="btn"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerF-->
+          </div>
+          <!--end answerReveal-->
+        </div>
+        <!------------------------------------------------->
+        <div id="pag1"><!--Paginas dos slides - pag1, pag2, pag3 etc-->
+				  <h2 class="qst">Qual o time foi Campeão em da copa do mundo de 2002?</h2>
+          <ul class="simpleList">
+            <li class="simpleListAnswer ">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Alemanha</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Italia</span>
+            </li>
+            <li class="simpleListAnswer correct" >
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Brasil</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">França</span>
+            </li>
+          </ul>
+          <!--end simpleList-->
+          <div class="answerReveal">
+            <div class="quizzAnswerC">
+              <div class="answerHeader">
+                <h3 class="correctMessage"><i class="fa fa-check-circle "></i>Parabéns </h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="bravo">Sua resposta está correta em muitos níveis! Bem feito!<br><br>
+                  O Brasil foi campeão em 2002 em cima da Alemanha</p>
+              </div>
+              <!--end asnwerText-->
+              <input type="button" value="Next" onClick="document.getElementById('pag2').style.display = 'block'; Cont();" onmouseup="document.getElementById('pag1').style.display = 'none';Flag()" class="btn"></input>
+            </div>
+            <!--end quizzAnswerC-->
+            <div class="quizzAnswerF">
+              <div class="answerHeader">
+                <h3 class="wrongMessage"><i class="fa fa-times-circle"></i>Desculpe</h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="sorry">A resposta certa seria<br><br>
+                  O Brasil foi campeão em 2002 em cima da AlemanhaSua resposta está correta em muitos níveis! Bem feito!<br><br>
+                  O Brasil foi campeão em 2002 em cima da Alemanha</p>
+                <input type="button" value="Next" onClick="document.getElementById('pag2').style.display = 'block'; Cont();" onmouseup="document.getElementById('pag1').style.display = 'none'; Flag();" class="btn"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerF-->
+          </div>
+          <!--end answerReveal-->
+        </div>
+        <!----------------------------------------------->
+        <!------------------------------------------------->
+        <br>
+        <div id="pag2">
+					<h2 class="qst">quanto é 2 x 4? - Pagina2 </h2>
+					<ul class="simpleList"><!-------Atenção------>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Pasta</span>
+            </li>
+            <li class="simpleListAnswer correct">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">8</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">232.456</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">1</span>
+            </li>
+          </ul>
+          <!--end simpleList-->
+          <div class="answerReveal">
+            <div class="quizzAnswerC">
+              <div class="answerHeader">
+                <h3 class="correctMessage"><i class="fa fa-check-circle "></i>Parabéns </h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="bravo">sua resposta esta correta </p>
+                <input type="button" value="Next" onClick="document.getElementById('pag3').style.display = 'block';Cont();" onmouseup="document.getElementById('pag2').style.display = 'none'; Flag();" class="btn"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerC-->
+            <div class="quizzAnswerF">
+              <div class="answerHeader">
+                <h3 class="wrongMessage"><i class="fa fa-times-circle  "></i>Desculpe</h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="sorry">Essa não é a resposta correta o certo seria 8</p>
+                <input type="button" value="Next" onClick="document.getElementById('pag3').style.display = 'block';Cont();" onmouseup="document.getElementById('pag2').style.display = 'none';Flag();" class="btn"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerF-->
+          </div>
+          <!--end answerReveal-->
+        </div>
+        <!------------------------------------------------------------->
+        <div id="pag3">
+          <h2 class="qst">Quantos pneus você tem que comprar se tiver 2 carros na família</h2>
+          <ul class="simpleList teste">
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">10</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Eu não tenho um carro</span>
+            </li>
+            <li class="simpleListAnswer correct">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">8</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">12</span>
+            </li>
+          </ul>
+          <!--end simpleList-->
+          <div class="answerReveal">
+            <div class="quizzAnswerC">
+              <div class="answerHeader">
+                <h3 class="correctMessage"><i class="fa fa-check-circle "></i>Parabéns </h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="bravo">Parabéns essa é a resposta certa <br> xxxxxxxxxxxxxxxxxx</p>
+                <input type="button" value="Next" onClick="document.getElementById('pag4').style.display = 'block';Cont();" onmouseup="document.getElementById('pag3').style.display = 'none'; Flag();" class="btn"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerC-->
+            <div class="quizzAnswerF">
+              <div class="answerHeader">
+                <h3 class="wrongMessage"><i class="fa fa-times-circle  "></i>Desculpe</h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="sorry">A resposta certa seria 8 </p>
+                <input type="button" value="Next" onClick="document.getElementById('pag4').style.display = 'block';Cont();" onmouseup="document.getElementById('pag3').style.display = 'none'; Flag();" class="btn"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerF-->
+          </div>
+          <!--end answerReveal-->
+        </div>
+        <!------------------------------------------------------------->
+        <div id="pag4">
+          <h2 class="qst">Se um pote de marmelada custa US $ 3, quanto custam 12<br>frascos de marmelada?</h2>
+          <ul class="simpleList teste">
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">$1,50</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">$5,80</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">$32</span>
+            </li>
+            <li class="simpleListAnswer correct">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">$36</span>
+            </li>
+          </ul>
+          <!--end simpleList-->
+          <div class="answerReveal">
+            <div class="quizzAnswerC">
+              <div class="answerHeader">
+                <h3 class="correctMessage"><i class="fa fa-check-circle "></i>Parabéns </h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="bravo">Parabéns essa é a reposta certa!</p>
+                <input type="button" value="Next" onClick="document.getElementById('pag5').style.display = 'block'; Cont();" onmouseup="document.getElementById('pag4').style.display = 'none';Flag();" class="btn" onclick="Send();"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerC-->
+            <div class="quizzAnswerF">
+              <div class="answerHeader">
+                <h3 class="wrongMessage"><i class="fa fa-times-circle  "></i>Desculpe</h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="sorry">Desculpe essa não é a resposta certa.</p>
+                <input type="button" value="Next" onClick="document.getElementById('pag5').style.display = 'block';Cont();" onmouseup="document.getElementById('pag4').style.display = 'none';Flag();" class="btn" onclick="Send();"></input>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerF-->
+          </div>
+          <!--end answerReveal-->
+        </div>
+        <!------------------------------------------------------------->
+        <div id="pag5">
+          <h2 class="qst">Qual planeta está mais próximo do sol?</h2>
+          <ul class="simpleList teste">
+
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Venus</span>
+            </li>
+
+            <li class="simpleListAnswer correct">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Mercurio</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Lua</span>
+            </li>
+            <li class="simpleListAnswer">
+              <span class="fa fa-square-o"></span>
+              <span class="simpleListText">Terra</span>
+            </li>
+          </ul>
+          <!--end simpleList-->
+          <div class="answerReveal">
+            <div class="quizzAnswerC">
+              <div class="answerHeader">
+                <h3 class="correctMessage"><i class="fa fa-check-circle"></i>Parabéns </h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="bravo">Parabéns é essa a reposta certa!</p>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerC-->
+            <div class="quizzAnswerF">
+              <div class="answerHeader">
+                <h3 class="wrongMessage"><i class="fa fa-times-circle  "></i>Desculpe</h3>
+              </div>
+              <!--end answer header-->
+              <div class="answerText">
+                <p id="sorry">Desculpe essa não é a resposta certa.</p>
+              </div>
+              <!--end asnwerText-->
+            </div>
+            <!--end quizzAnswerF-->
+          </div>
+          <!--end answerReveal-->
+          <div class="finalResult">
+            <h4>Quanto você acha que sabe sobre risco ?</h4>
+            <div class="resultContainer"></div>
+            <div id="halfText"></div>
+          </div>
+          <!--end finalResult-->
+        </div>
+        <!--end inner-->
+      </div>
+      <!--end container-->	
+      <!----------------------------------------------------------------------------------------->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tracing.js/1.1.3/tracing.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript-debug/0.4/ba-debug.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/deb.js/0.0.2/deb.min.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="script.js"></script>
+      <script src="//code.jquery.com/jquery.min.js"></script>
+  </body>
+</html>
