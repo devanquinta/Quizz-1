@@ -35,7 +35,7 @@ function canvasProgress(num){
 		circle.arc(100, 100, 90, 0, 2*Math.PI);
 		circle.stroke();
 
-		percentageText.font 		= '100 5rem Lato';
+		percentageText.font 		= '100 20px Lato';
 		percentageText.textAlign 	= 'center';
 		percentageText.fillStyle 	= "lightgrey";
 		percentageText.fillText(percentage, 200, 220);
