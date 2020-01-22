@@ -5,13 +5,16 @@
 	<link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="estilo.css" type="text/css" media="all">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">-->
 </head>
 <body>
   <span class="img"><img src="img/logotipo.png"/></span>
 	<div class="container">
 		<div class="inner">
-			<!------------------------------------------------->
+
+			<!-------------------------------------->
 			<div id="pagA">
 				<div id="textIndex">
 					<h1 class="textoInic">Aprendendo sobre Riscos<br>Corporativos</h1>
@@ -22,6 +25,7 @@
       <button class="btn3" id="Id"  onClick="document.getElementById('pag0').style.display = 'block';"        onmouseup="document.getElementById('pagA').style.display = 'none'">Start Quizz</button>
       </div>
 			<div id="pag0">
+				<div id="logo">Ganhou</div>
 				<!--Paginas dos slides - pag1, pag2, pag3 etc-->
 				<h2 class="qst">O que é risco de processo ?</h2>
 				<ul class="simpleList">
@@ -346,7 +350,16 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="script.js"></script>
-      <script src="//code.jquery.com/jquery.min.js"></script>
+			  <script src="circlos.js"></script>
+				<script>
+				$(document).ready(function(){
+					// init
+						$(".cdev").circlos();
+
+
+				});
+				</script>
   </body>
 </html>
