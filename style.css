@@ -235,3 +235,9 @@ input.hide:checked ~ div.content {
 jQuery-Circle-Plugin v0.1 by Jamal hassouni
 https://github.com/jamalhassouni
 */
+
+#counter-canvas{
+	margin-left: 83%;
+	margin-top: -2%;
+	position: absolute;
+}

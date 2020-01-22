@@ -5,6 +5,7 @@ var errada = 0;
 var mail = "";
 var cont=1;
 var flag=1;
+var n = 0;
 var perguntasTotal = "false"
 var a , b, c, d , e, f = "false"
 /****************TESTES************************* */
@@ -17,8 +18,103 @@ function Flag(){
     flag++;
     return flag;
 }
+/******************************************************/
+
+// WORK IN PROGRESS 
+
+function canvasProgress(num){
+		var canvas 			= document.getElementById('counter-canvas');
+		var bar 			= canvas.getContext('2d');
+		var circle 			= canvas.getContext('2d');
+		var percentageText 	= canvas.getContext("2d");
+		var percentage 		= '0%';
+
+		circle.beginPath();
+		circle.strokeStyle = '#f1f1f1';
+		circle.lineWidth 	= 10;
+		circle.arc(100, 100, 90, 0, 2*Math.PI);
+		circle.stroke();
+
+		percentageText.font 		= '100 5rem Lato';
+		percentageText.textAlign 	= 'center';
+		percentageText.fillStyle 	= "lightgrey";
+		percentageText.fillText(percentage, 200, 220);
+
+		var input       = 10;
+		var got         = 10;
+		input           = got/input*num;/* Aqui fica o tamanho - importante */
+		var count 	    = 0;
+		var i           = 1;
+		var state 	    = false;
+		var ms 		      = 10;
+
+
+		function counter() {
+			if(i <= input) {
+				count = count + 0.02;
+				percentage = (i++) + '%';
+				percentageText.clearRect(0, 0, 400, 400);
+				circle.beginPath();
+				circle.lineWidth 	= 10;
+				circle.arc(100, 100, 90, 0, 2*Math.PI);
+				circle.stroke();
+				var grd = bar.createLinearGradient(0,0,170,0);
+				grd.addColorStop(0,"lightgreen");
+				grd.addColorStop(1,"aquamarine");
+				bar.strokeStyle = grd;
+				bar.beginPath();
+				bar.lineWidth 	= 10;
+				bar.arc(100, 100, 90, 0, count*Math.PI);
+				bar.shadowBlur	= 10;
+				bar.shadowColor	= "#e1e1e1";
+				bar.stroke();
+				percentageText.fillStyle = "lightgrey";
+				percentageText.fillText(percentage, 100, 120);
+				circle.strokeStyle = '#f1f1f1';
+			}
+		}
+
+		var counterId = setInterval(counter, ms);
+
+		document.addEventListener('keydown', function(e) {
+			if(e.keyCode === 82) {
+				clearInterval(counterId);
+				count = 0;
+				i = 1;
+				state = false;
+				counterId = setInterval(counter, ms);
+			}
+			if(e.keyCode === 32) {
+				if(state) {
+					state = false;
+					counterId = setInterval(counter, ms);
+				} else {
+					state = true;
+					clearInterval(counterId);
+					
+				}
+			}
+			if(e.keyCode === 40) {
+				ms = ms + 10;
+				clearInterval(counterId);
+				counterId = setInterval(counter, ms);
+			} else if( e.keyCode === 38) {
+				console.log(e.keyCode)
+				ms = ms - 10;
+				clearInterval(counterId);
+				counterId = setInterval(counter, ms);
+			}
+		});
+
+}
+
+canvasProgress(10)
+
+
+
 /*************************************************** */
 $(document).ready(function() {
+	
   //obter total de perguntas
   var $questionNumber = $('h2').length;
   //pontuação final em cache
@@ -52,12 +148,8 @@ $(document).ready(function() {
 		 /********************/
 		 correta+=1;
      var certa = correta -1;
-		 	$("#v").data-percent(60);
-			/***********/
-			$("#v").width(60);
-
-			   $("#v").attr( "data-percent",50 );
-
+		 n+=10
+		 canvasProgress(n);
 
      if (correta > certa && cont==1) {
         a = " Acertou 1 ";    
@@ -94,8 +186,11 @@ $(document).ready(function() {
       //locate correct answer and highlight
       $parent.find('.correct').addClass('correctAnswer');
 			/********************/
-			errada+=1;
+		errada+=1;
     var erro = errada -1;
+
+		n+=10
+		canvasProgress(n);
     if (erro < errada && flag ==1){
       a = " Errou 1 "
      }
@@ -160,7 +255,8 @@ $(document).ready(function() {
 			mail = " O usuário " + " acertou  "+correta+ " pergunta(s), " + "e  errou  "+errada+ " pergunta(s)" + "<br> Total de pontos = " +pontos+ " !" + "<br>Total de perguntas certas e erradas são: " +  perguntasTotal;
 			}
 			email();
- 			  Email.send({
+			
+ 			/*  Email.send({
           Host : "smtp.elasticemail.com",
           Username : "vander.quintanilha@soulasalle.com.br",
           Password : "9dab2617-d450-49df-9258-dbed2a668f13",
@@ -169,12 +265,14 @@ $(document).ready(function() {
           Subject : "Dados das respostas do usuario",
           Body :  mail
       })
-    .then(message => alert(message));//alert(message)
-  });
+    .then(message => alert(message));*/
+
+     });
+
+	
 	/*******************************************************************************************************************/
 }); //end dom ready - fim do dom 
 
 
-/************************************************************************************************* */
 
 
